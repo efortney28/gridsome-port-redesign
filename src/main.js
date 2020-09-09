@@ -13,6 +13,7 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
+  Vue.use(Lightbox)
 
   head.link.push({
     rel: 'stylesheet',
