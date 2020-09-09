@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: efortney28/gridsome-port-redesign
+
+media_folder: "static/uploads"
+public_foler: '/uploads'
+
+collections:
+  - name: "photography"
+    label: "Photo Entry"
+    folder: "content/photography"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Images", name: "images", widget: "image"}
+  
+  - name: "dev"
+    label: "Dev Entry"
+    folder: "content/dev"
+    create: true
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "URL", name: "url", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Screenshot", name: "screenshot", widget: "image"}
+      
