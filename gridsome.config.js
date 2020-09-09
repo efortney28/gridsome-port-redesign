@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Eric Fortney|Developer|Photographer',
+  siteName: 'Eric Fortney - Developer|Photographer',
   siteDescription: 'Photographer and web developer based in the greater Houston, Texas area.',
   icon: 'src/favicon.png',
   plugins: [
