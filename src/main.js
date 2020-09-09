@@ -3,7 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import BootstrapVue from 'bootstrap-vue'
-import Lightbox2 from 'lightbox2'
+import Lightbox from 'lightbox2'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -14,7 +14,7 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
-  Vue.use(Lightbox2)
+  Vue.use(Lightbox)
 
   head.link.push({
     rel: 'stylesheet',
