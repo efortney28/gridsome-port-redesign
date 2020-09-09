@@ -13,7 +13,7 @@ need, I have done it before.</p>
       </div>
       <b-col class="photo-entry" v-for="photo in $page.photo.edges">
         <h3 class="image-title">{{ photo.node.title}}</h3>
-        <a :href="photo.node.images" :data-lightbox="photo.node.title" :data-title="photo.node.description" maxHeight="1000"><b-img class="single-entry" thumbnail :src="photo.node.images"></b-img></a>
+        <b-img class="single-entry" thumbnail :src="photo.node.images"></b-img>
       </b-col>
     </b-container>
   </Layout>
