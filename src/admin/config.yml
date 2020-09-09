@@ -2,7 +2,7 @@ backend:
   name: github
   repo: efortney28/gridsome-port-redesign
 
-media_folder: "static/uploads"
+media_folder: "/uploads"
 public_foler: '/uploads'
 
 collections:
