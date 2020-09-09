@@ -24,5 +24,7 @@ import Navbar from '../components/Navbar.vue'
 </script>
 
 <style>
-
+html {
+  background: #222831;
+}
 </style>
