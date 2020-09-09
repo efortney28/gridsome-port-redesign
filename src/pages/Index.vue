@@ -2,7 +2,7 @@
   <Layout>
     <div class="hero">
     </div>
-    <div class="info">
+    <div class="info container-fluid">
       <h1 class="title">Hey there!</h1>
       <h2 class="subtitle">I'm Eric Fortney! I take pictures and build websites!</h2>
       <p class="cta-text">Click one of the buttons below to find out more information about me! :)</p>
@@ -15,22 +15,25 @@
         </div>
       </div>
     </div>
-    <div class="social container-fluid">
-      <div class="row social">
-        <g-img src="../../static/facebook" width="30"></g-img>
-        <g-img src="../../static/instagram" width="30"></g-img>
-        <g-img src="../../static/github" width="30"></g-img>
-        <g-img src="../../static/twitter" width="30"></g-img>
-        <g-img src="../../static/flickr" width="30"></g-img>
-      </div>
+    <Social />
+    <div class="banner text-center">
+      <h2 class="banner-text">Interested in working together? Contact me below!</h2>
     </div>
+    <ContactForm />
   </Layout>
 </template>
 
 <script>
+import Social from "../components/Social.vue"
+import ContactForm from "../components/ContactForm.vue"
+
 export default {
   metaInfo: {
     title: 'Home'
+  },
+  components: {
+    Social,
+    ContactForm,
   }
 }
 </script>
@@ -65,7 +68,7 @@ export default {
   font-family: "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 300;
-  margin: 0.25em 1em 1em 1em;
+  margin: 0.25em 1em 1.5em 1.75em;
 
 }
 .dev {
@@ -76,5 +79,15 @@ export default {
 }
 .social {
   background-color: #2D4059;
+}
+.banner {
+  background-color: #2DC583;
+  padding: 1.5em 1em 1em 1em;
+}
+.banner-text {
+  font-family: "Poppins", sans-serif;
+  color: #EEE;
+  font-weight: 300;
+  font-size: 12px;
 }
 </style>
