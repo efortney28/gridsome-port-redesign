@@ -15,6 +15,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Images", name: "images", widget: "image"}
+      - {label: "Flickr URL", name: "url", widget: "string"}
   
   - name: "dev"
     label: "Dev Entry"
