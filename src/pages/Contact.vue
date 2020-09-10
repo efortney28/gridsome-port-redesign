@@ -1,6 +1,6 @@
 <template>
   <Layout class="dark-bg">
-    <p class="contact-text">Fill out the form below and I will get back to you as soon as possible!</p>
+    <p class="contact-text text-center">Fill out the form below and I will get back to you as soon as possible!</p>
     <ContactForm />
   </Layout>
 </template>
@@ -28,4 +28,9 @@ export default {
   padding: 2em 1em 0 1em;
 }
 
+@media screen and (min-width: 800px){
+  .contact-text {
+    font-size: 20px;
+  }
+}
 </style>

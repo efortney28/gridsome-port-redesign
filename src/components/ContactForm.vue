@@ -125,4 +125,17 @@ export default {
     color: #EEE;
     margin: 1em;
 }
+
+@media screen and (min-width: 800px){
+    .form-container {
+        padding: 4em 8em;
+    }
+    .form-input {
+        margin: 2em;
+    }
+    .select-field-text{
+        font-size: 16px;
+        padding: 1em 0 0 2em;
+    }
+}
 </style>

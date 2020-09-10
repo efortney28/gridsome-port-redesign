@@ -9,11 +9,11 @@ I've photographed anything from cars, people, sports,
 to events like weddings, even engagements and
 newborn announcements! If there is anything you
 need, I have done it before.</p>
-        <h2 class="cta">Click any photo below for more information!</h2>
+        <h2 class="cta">Click any photo below to be taken to larger versions!</h2>
       </div>
       <b-col class="photo-entry" v-for="photo in $page.photo.edges">
         <h3 class="image-title">{{ photo.node.title}}</h3>
-        <b-img class="single-entry" thumbnail :src="photo.node.images"></b-img>
+        <a :href="photo.node.url" target="_blank"><b-img class="single-entry" thumbnail :src="photo.node.images"></b-img></a>
       </b-col>
     </b-container>
   </Layout>
@@ -27,6 +27,7 @@ need, I have done it before.</p>
           title
           description
           images
+          url
         }
       }
     }
@@ -67,5 +68,23 @@ export default {
   color: #EEE;
   font-weight: 300;
   font-size: 14px;
+}
+@media screen and (min-width: 800px){
+  .info-wrapper {
+    font-size: 20px;
+    padding: 2em 4em 2em 4em;
+  }
+  .photo-page-info {
+    font-size: 20px;
+  }
+  .cta {
+    font-size: 20px;
+  }
+  .image-title{
+    font-size: 18px;
+  }
+  .single-entry {
+    max-width: 1000px;
+  }
 }
 </style>
