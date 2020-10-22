@@ -1,14 +1,11 @@
-# Default starter for Gridsome
+# Personal Portfolio
+This is the most recent version of my personal development and photography portfolio. I wanted something that was cheap (free) to host, and had a barebones (minimal) content management system. I wanted to be able to post pictures for my photography portfolio with some information about each picture, along with a screenshot of each web project for my development portfolio. Netlify CMS was a great choice for me because I could render the markdown files and use them to create new "posts" on corresponding pages.
 
-This is the project you get when you run `gridsome create new-project`.
+# Technologies Used
+- VueJS with Gridsome for SEO and SSR
+- Netlify for host
+- Netlify CMS for content management
+- GraphQL for data
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+# Demo 
+https://boring-lamarr-df310d.netlify.app/
